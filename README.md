@@ -1,92 +1,76 @@
-# FAANG-tastic Insights: Predict Stock Prices with Regression, MLflow, and Streamlit
+# Customer Conversion Analysis for Online Shopping Using Clickstream Data
 
-## 📊 Project Overview
+## Project Overview
 
-**FAANG-tastic Insights** is a machine learning project designed to predict stock prices of FAANG companies (Facebook, Amazon, Apple, Netflix, and Google) using regression models. The project integrates **MLflow** for tracking experiments and **Streamlit** for an interactive dashboard to visualize predictions.
+This project focuses on analyzing customer conversion for online shopping using clickstream data. The goal is to develop a Streamlit web application that leverages machine learning models to predict customer conversion, estimate potential revenue, and segment customers based on their browsing behavior.
 
-## 🚀 Features
+## Project Structure
 
-- Stock price prediction using **Linear Regression** and **Random Forest Regressor**
-- Model evaluation with **R² Score**, **RMSE**, and **MAE**
-- Experiment tracking and model management with **MLflow**
-- Interactive web dashboard powered by **Streamlit** for dynamic visualization
+The repository contains the following files:
 
-## 📂 Project Structure
+- **README.md**: This file, providing an overview of the project.
+- **Reg_clustering.ipynb**: Jupyter notebook containing code for regression and clustering models.
+- **data_preprocessing_eda_modeling.ipynb**: Jupyter notebook for data preprocessing, exploratory data analysis (EDA), and model building.
+- **model.pkl**: Serialized machine learning model for deployment.
+- **output_2.png**: Example output or visualization generated during the project.
+- **streamlit_deploy.py**: Python script for deploying the Streamlit web application.
 
-```
-FAANG-tastic-Insights/
-├── app.py                        # python_file web application for streamlit
-├── faang_model_train.ipynb       # python_notebooks for EDA and model development
-├── mlfow.db                      # mlflow metadata storage
-├── requirements.txt              # Python dependencies
-└── README.md                     # Project documentation
-```
+## Key Features
 
-## ⚙️ Installation
+1. **Customer Conversion Prediction**: Predict whether a customer will complete a purchase based on their browsing behavior.
+2. **Revenue Estimation**: Estimate the potential revenue a customer is likely to generate.
+3. **Customer Segmentation**: Segment customers into distinct groups based on their online behavior patterns.
 
-1. **Clone the repository:**
+## Installation and Usage
+
+### Prerequisites
+
+- Python 3.x
+- Required Python libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost, tensorflow, streamlit
+
+### Installation
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/mhdafrith/FAANG-tastic-Insights-Predict-Stock-Prices-with-Regression-and-MLflow.git
-   cd FAANG-tastic-Insights
+   git clone https://github.com/your-username/Customer-Conversion-Analysis-for-Online-Shopping-Using-Clickstream-Data.git
    ```
-
-2. **Create a virtual environment and activate it:**
+2. Navigate to the project directory:
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   cd Customer-Conversion-Analysis-for-Online-Shopping-Using-Clickstream-Data
    ```
-
-3. **Install dependencies:**
+3. Install the required libraries:
    ```bash
    pip install -r requirements.txt
    ```
 
-## 🧪 Running the Project
+### Running the Streamlit Application
 
-### 1. **Model Training with MLflow:**
-```bash
-mlflow run .
+1. Run the Streamlit application:
+   ```bash
+   streamlit run streamlit_deploy.py
+   ```
+2. Open your web browser and navigate to the provided local URL to interact with the application.
+
+## Project Deliverables
+
+- **Source Code**: Scripts for preprocessing, modeling, and deployment.
+- **Streamlit Application**: Interactive tool for predictions and insights.
+- **Documentation**: Explanation of methodology, approaches, and results.
+- **Presentation Deck**: Summarized findings and visualizations.
+
+## References
+
+- [UCI Machine Learning Repository - Clickstream Data](https://archive.ics.uci.edu/ml/datasets/Clickstream+Data+for+Online+Shopping)
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+
+## Contributors
+
+- [Mohamed Afrith S](https://github.com/mhdafrith)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
-This will execute the experiment and log metrics, parameters, and artifacts.
 
-### 2. **Launch the Streamlit App:**
-```bash
-streamlit run app.py
-```
-This opens an interactive dashboard in your browser for dynamic stock price predictions.
-
-## 📈 Model Evaluation Metrics
-
-- **R² Score:** Measures how well the model explains variance.
-- **RMSE (Root Mean Square Error):** Indicates the model’s prediction error.
-- **MAE (Mean Absolute Error):** Average absolute error between predicted and actual values.
-
-## 🗃️ Technologies Used
-
-- **Python**: Data processing and model development
-- **Pandas, NumPy, Matplotlib, Seaborn**: Data analysis and visualization
-- **Scikit-learn**: Machine learning models
-- **MLflow**: Experiment tracking and model management
-- **Streamlit**: Interactive web-based data visualization
-
-## 📢 Acknowledgements
-- **Guvi** for providing the data science learning platform and support.
-- **FAANG companies** for inspiring the dataset and predictive analysis
-- **MLflow & Streamlit communities** for powerful tools and resources
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature-xyz`)
-3. Commit your changes (`git commit -m 'Add new feature'`)
-4. Push to the branch (`git push origin feature-xyz`)
-5. Create a pull request
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-**Happy Predicting! 🚀**
-
+You can copy and paste this content directly into your `README.md` file. Just make sure to replace the placeholders (like `your-username` and `Your Name`) with your actual GitHub username and personal information.
